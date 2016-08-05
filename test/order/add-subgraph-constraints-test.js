@@ -14,7 +14,7 @@ describe('order/addSubgraphConstraints', function () {
 
   it('does not change CG for a flat set of nodes', function () {
     var vs = ['a', 'b', 'c', 'd']
-    _.each(vs, function (v) { g.setNode(v) })
+    _.forEach(vs, function (v) { g.setNode(v) })
     addSubgraphConstraints(g, cg, vs)
     expect(cg.nodeCount()).equals(0)
     expect(cg.edgeCount()).equals(0)
@@ -22,7 +22,7 @@ describe('order/addSubgraphConstraints', function () {
 
   it("doesn't create a constraint for contiguous subgraph nodes", function () {
     var vs = ['a', 'b', 'c']
-    _.each(vs, function (v) {
+    _.forEach(vs, function (v) {
       g.setParent(v, 'sg')
     })
     addSubgraphConstraints(g, cg, vs)
@@ -40,7 +40,7 @@ describe('order/addSubgraphConstraints', function () {
 
   it('works for multiple levels', function () {
     var vs = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
-    _.each(vs, function (v) {
+    _.forEach(vs, function (v) {
       g.setNode(v)
     })
     g.setParent('b', 'sg2')

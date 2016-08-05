@@ -18,7 +18,7 @@ describe('acyclic', function () {
       .setDefaultEdgeLabel(function () { return { minlen: 1, weight: 1 } })
   })
 
-  _.each(ACYCLICERS, function (acyclicer) {
+  _.forEach(ACYCLICERS, function (acyclicer) {
     describe(acyclicer, function () {
       beforeEach(function () {
         g.setGraph({ acyclicer: acyclicer })
