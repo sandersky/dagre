@@ -447,8 +447,11 @@ describe('position/bk', function () {
       g.graph().edgesep = 50
       g.setNode('a', { rank: 0, order: 0, width: 100, dummy: 'edge' })
       g.setNode('b', {
-        rank: 0, order: 1, width: 200,
-        dummy: 'edge-label', labelpos: 'l'
+        rank: 0,
+        order: 1,
+        width: 200,
+        dummy: 'edge-label',
+        labelpos: 'l'
       })
       g.setNode('c', { rank: 0, order: 2, width: 300, dummy: 'edge' })
 
@@ -464,8 +467,11 @@ describe('position/bk', function () {
       g.graph().edgesep = 50
       g.setNode('a', { rank: 0, order: 0, width: 100, dummy: 'edge' })
       g.setNode('b', {
-        rank: 0, order: 1, width: 200,
-        dummy: 'edge-label', labelpos: 'c'
+        rank: 0,
+        order: 1,
+        width: 200,
+        dummy: 'edge-label',
+        labelpos: 'c'
       })
       g.setNode('c', { rank: 0, order: 2, width: 300, dummy: 'edge' })
 
@@ -481,8 +487,11 @@ describe('position/bk', function () {
       g.graph().edgesep = 50
       g.setNode('a', { rank: 0, order: 0, width: 100, dummy: 'edge' })
       g.setNode('b', {
-        rank: 0, order: 1, width: 200,
-        dummy: 'edge-label', labelpos: 'r'
+        rank: 0,
+        order: 1,
+        width: 200,
+        dummy: 'edge-label',
+        labelpos: 'r'
       })
       g.setNode('c', { rank: 0, order: 2, width: 300, dummy: 'edge' })
 
