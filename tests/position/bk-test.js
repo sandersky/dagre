@@ -1,22 +1,21 @@
-import {expect} from 'chai'
-import {Graph} from 'graphlib'
-import _ from 'lodash'
+const expect = require('chai').expect
+const Graph = require('graphlib').Graph
+const _ = require('lodash')
 
-import bk from '../../lib/position/bk'
-const {
-  addConflict,
-  alignCoordinates,
-  balance,
-  findSmallestWidthAlignment,
-  findType1Conflicts,
-  findType2Conflicts,
-  hasConflict,
-  horizontalCompaction,
-  positionX,
-  verticalAlignment
-} = bk
+const bk = require('../../lib/position/bk')
 
-import {buildLayerMatrix} from '../../lib/util'
+const addConflict = bk.addConflict
+const alignCoordinates = bk.alignCoordinates
+const balance = bk.balance
+const findSmallestWidthAlignment = bk.findSmallestWidthAlignment
+const findType1Conflicts = bk.findType1Conflicts
+const findType2Conflicts = bk.findType2Conflicts
+const hasConflict = bk.hasConflict
+const horizontalCompaction = bk.horizontalCompaction
+const positionX = bk.positionX
+const verticalAlignment = bk.verticalAlignment
+
+const buildLayerMatrix = require('../../lib/util').buildLayerMatrix
 
 describe('position/bk', function () {
   var g

@@ -1,8 +1,8 @@
-import {expect} from 'chai'
-import {Graph} from 'graphlib'
-import _ from 'lodash'
+const expect = require('chai').expect
+const Graph = require('graphlib').Graph
+const _ = require('lodash')
 
-import layout from '../lib/layout'
+const layout = require('../lib/layout')
 
 describe('layout', function () {
   var g

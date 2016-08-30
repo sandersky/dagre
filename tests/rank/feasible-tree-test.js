@@ -1,8 +1,8 @@
-import {expect} from 'chai'
-import {Graph} from 'graphlib'
-import _ from 'lodash'
+const expect = require('chai').expect
+const Graph = require('graphlib').Graph
+const _ = require('lodash')
 
-import feasibleTree from '../../lib/rank/feasible-tree'
+const feasibleTree = require('../../lib/rank/feasible-tree')
 
 describe('feasibleTree', function () {
   it('creates a tree for a trivial input graph', function () {

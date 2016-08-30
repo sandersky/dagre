@@ -1,8 +1,8 @@
-import {expect} from 'chai'
-import {Graph} from 'graphlib'
-import _ from 'lodash'
+const expect = require('chai').expect
+const Graph = require('graphlib').Graph
+const _ = require('lodash')
 
-import addSubgraphConstraints from '../../lib/order/add-subgraph-constraints'
+const addSubgraphConstraints = require('../../lib/order/add-subgraph-constraints')
 
 describe('order/addSubgraphConstraints', function () {
   var g, cg

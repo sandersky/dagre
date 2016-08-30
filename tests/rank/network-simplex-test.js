@@ -1,21 +1,22 @@
-import {expect} from 'chai'
-import {Graph} from 'graphlib'
-import _ from 'lodash'
+const expect = require('chai').expect
+const Graph = require('graphlib').Graph
+const _ = require('lodash')
 
-import networkSimplex, {
-  calcCutValue,
-  enterEdge,
-  exchangeEdges,
-  initCutValues,
-  initLowLimValues,
-  leaveEdge
-} from '../../lib/rank/network-simplex'
+const ns = '../../lib/rank/network-simplex'
 
-import util from '../../lib/util'
-const {normalizeRanks} = util
+const networkSimplex = ns.default
+const calcCutValue = ns.calcCutValue
+const enterEdge = ns.enterEdge
+const exchangeEdges = ns.exchangeEdges
+const initCutValues = ns.initCutValues
+const initLowLimValues = ns.initLowLimValues
+const leaveEdge = ns.leaveEdge
 
-import rankUtil from '../../lib/rank/util'
-const {longestPath} = rankUtil
+const util = require('../../lib/util')
+const normalizeRanks = util.normalizeRanks
+
+const rankUtil = require('../../lib/rank/util')
+const longestPath = rankUtil.longestPath
 
 describe('network simplex', function () {
   var g, t, gansnerGraph, gansnerTree

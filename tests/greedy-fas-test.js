@@ -1,9 +1,11 @@
-import {expect} from 'chai'
-import {alg, Graph} from 'graphlib'
-const {findCycles} = alg
-import _ from 'lodash'
+const expect = require('chai').expect
+const graphlib = require('graphlib')
+const alg = graphlib.alg
+const Graph = graphlib.Graph
+const findCycles = alg.findcycles
+const _ = require('lodash')
 
-import greedyFAS from '../lib/greedy-fas'
+const greedyFAS = require('../lib/greedy-fas')
 
 describe('greedyFAS', function () {
   var g

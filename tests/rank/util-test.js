@@ -1,10 +1,10 @@
-import {expect} from 'chai'
-import {Graph} from 'graphlib'
+const expect = require('chai').expect
+const Graph = require('graphlib').Graph
 
-import {normalizeRanks} from '../../lib/util'
+const normalizeRanks = require('../../lib/util').normalizeRanks
 
-import rankUtil from '../../lib/rank/util'
-const {longestPath} = rankUtil
+const rankUtil = require('../../lib/rank/util')
+const longestPath = rankUtil.longestPath
 
 describe('rank/util', function () {
   describe('longestPath', function () {

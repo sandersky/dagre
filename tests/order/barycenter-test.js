@@ -1,7 +1,7 @@
-import {expect} from 'chai'
-import {Graph} from 'graphlib'
+const expect = require('chai').expect
+const Graph = require('graphlib').Graph
 
-import barycenter from '../../lib/order/barycenter'
+const barycenter = require('../../lib/order/barycenter')
 
 describe('order/barycenter', function () {
   var g

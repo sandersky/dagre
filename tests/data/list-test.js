@@ -1,6 +1,6 @@
-import {expect} from 'chai'
+const expect = require('chai').expect
 
-import List from '../../lib/data/list'
+const List = require('../../lib/data/list')
 
 describe('data.List', function () {
   var list

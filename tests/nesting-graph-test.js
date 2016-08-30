@@ -1,8 +1,10 @@
-import {expect} from 'chai'
-import {alg, Graph} from 'graphlib'
-const {components} = alg
+const expect = require('chai').expect
+const graphlib = require('graphlib')
+const alg = graphlib.alg
+const Graph = graphlib.Graph
+const components = alg.components
 
-import nestingGraph from '../lib/nesting-graph'
+const nestingGraph = require('../lib/nesting-graph')
 
 describe('rank/nestingGraph', function () {
   var g

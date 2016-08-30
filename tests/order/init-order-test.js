@@ -1,8 +1,8 @@
-import {expect} from 'chai'
-import {Graph} from 'graphlib'
-import _ from 'lodash'
+const expect = require('chai').expect
+const Graph = require('graphlib').Graph
+const _ = require('lodash')
 
-import initOrder from '../../lib/order/init-order'
+const initOrder = require('../../lib/order/init-order')
 
 describe('order/initOrder', function () {
   var g

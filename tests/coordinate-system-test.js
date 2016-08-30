@@ -1,7 +1,7 @@
-import {expect} from 'chai'
-import {Graph} from 'graphlib'
+const expect = require('chai').expect
+const Graph = require('graphlib').Graph
 
-import coordinateSystem from '../lib/coordinate-system'
+const coordinateSystem = require('../lib/coordinate-system')
 
 describe('coordinateSystem', function () {
   var g

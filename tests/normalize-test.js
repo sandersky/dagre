@@ -1,8 +1,8 @@
-import {expect} from 'chai'
-import {Graph} from 'graphlib'
-import _ from 'lodash'
+const expect = require('chai').expect
+const Graph = require('graphlib').Graph
+const _ = require('lodash')
 
-import normalize from '../lib/normalize'
+const normalize = require('../lib/normalize')
 
 describe('normalize', function () {
   var g

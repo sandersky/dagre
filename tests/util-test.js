@@ -1,18 +1,18 @@
-import {expect} from 'chai'
-import {Graph} from 'graphlib'
-import _ from 'lodash'
+const expect = require('chai').expect
+const Graph = require('graphlib').Graph
+const _ = require('lodash')
 
-import {
-  asNonCompoundGraph,
-  buildLayerMatrix,
-  intersectRect,
-  normalizeRanks,
-  predecessorWeights,
-  removeEmptyRanks,
-  simplify,
-  successorWeights,
-  time
-} from '../lib/util'
+const utils = require('../lib/util')
+
+const asNonCompoundGraph = utils.asNonCompoundGraph
+const buildLayerMatrix = utils.buildLayerMatrix
+const intersectRect = utils.intersectRect
+const normalizeRanks = utils.normalizeRanks
+const predecessorWeights = utils.predecessorWeights
+const removeEmptyRanks = utils.removeEmptyRanks
+const simplify = utils.simplify
+const successorWeights = utils.successorWeights
+const time = utils.time
 
 describe('util', function () {
   describe('simplify', function () {

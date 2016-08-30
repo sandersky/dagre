@@ -1,6 +1,6 @@
-import {expect} from 'chai'
+const expect = require('chai').expect
 
-import sort from '../../lib/order/sort'
+const sort = require('../../lib/order/sort')
 
 describe('sort', function () {
   it('sorts nodes by barycenter', function () {

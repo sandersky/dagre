@@ -1,4 +1,4 @@
-import {expect} from 'chai'
+const expect = require('chai').expect
 
 describe('version', function () {
   it('should match the version from package.json', function () {

@@ -1,10 +1,10 @@
-import {expect} from 'chai'
-import {Graph} from 'graphlib'
-import _ from 'lodash'
+const expect = require('chai').expect
+const Graph = require('graphlib').Graph
+const _ = require('lodash')
 
-import order from '../../lib/order'
-import crossCount from '../../lib/order/cross-count'
-import {buildLayerMatrix} from '../../lib/util'
+const order = require('../../lib/order')
+const crossCount = require('../../lib/order/cross-count')
+const buildLayerMatrix = require('../../lib/util').buildLayerMatrix
 
 describe('order', function () {
   var g

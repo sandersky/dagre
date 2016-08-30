@@ -1,7 +1,7 @@
-import {expect} from 'chai'
-import {Graph} from 'graphlib'
+const expect = require('chai').expect
+const Graph = require('graphlib').Graph
 
-import parentDummyChains from '../lib/parent-dummy-chains'
+const parentDummyChains = require('../lib/parent-dummy-chains')
 
 describe('parentDummyChains', function () {
   var g
