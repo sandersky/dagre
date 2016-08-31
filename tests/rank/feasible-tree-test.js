@@ -16,8 +16,7 @@ describe('feasibleTree', function () {
     expect(tree.neighbors('a')).to.eql(['b'])
   })
 
-  // FIXME: following test causes tests to hang indefinitely
-  it.skip('correctly shortens slack by pulling a node up', function () {
+  it('correctly shortens slack by pulling a node up', function () {
     var g = new Graph()
       .setNode('a', { rank: 0 })
       .setNode('b', { rank: 1 })
@@ -36,8 +35,7 @@ describe('feasibleTree', function () {
     expect(tree.neighbors('d')).to.eql(['a'])
   })
 
-  // FIXME: following test causes tests to hang indefinitely
-  it.skip('correctly shortens slack by pulling a node down', function () {
+  it('correctly shortens slack by pulling a node down', function () {
     var g = new Graph()
       .setNode('a', { rank: 2 })
       .setNode('b', { rank: 0 })
