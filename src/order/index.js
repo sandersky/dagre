@@ -4,7 +4,7 @@ import crossCount from './cross-count'
 import sortSubgraph from './sort-subgraph'
 import buildLayerGraph from './build-layer-graph'
 import addSubgraphConstraints from './add-subgraph-constraints'
-import {Graph} from 'graphlib'
+import {Graph} from 'ciena-graphlib'
 import {buildLayerMatrix, maxRank} from '../util'
 
 function buildLayerGraphs (g, ranks, relationship) {

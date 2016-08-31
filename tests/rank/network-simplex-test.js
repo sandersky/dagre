@@ -1,16 +1,15 @@
 const expect = require('chai').expect
-const Graph = require('graphlib').Graph
+const Graph = require('ciena-graphlib').Graph
 const _ = require('lodash')
 
-const ns = '../../lib/rank/network-simplex'
+const networkSimplex = require('../../lib/rank/network-simplex')
 
-const networkSimplex = ns.default
-const calcCutValue = ns.calcCutValue
-const enterEdge = ns.enterEdge
-const exchangeEdges = ns.exchangeEdges
-const initCutValues = ns.initCutValues
-const initLowLimValues = ns.initLowLimValues
-const leaveEdge = ns.leaveEdge
+const calcCutValue = networkSimplex.calcCutValue
+const enterEdge = networkSimplex.enterEdge
+const exchangeEdges = networkSimplex.exchangeEdges
+const initCutValues = networkSimplex.initCutValues
+const initLowLimValues = networkSimplex.initLowLimValues
+const leaveEdge = networkSimplex.leaveEdge
 
 const util = require('../../lib/util')
 const normalizeRanks = util.normalizeRanks

@@ -1,5 +1,5 @@
 const expect = require('chai').expect
-const Graph = require('graphlib').Graph
+const Graph = require('ciena-graphlib').Graph
 const _ = require('lodash')
 
 const buildLayerGraph = require('../../lib/order/build-layer-graph')

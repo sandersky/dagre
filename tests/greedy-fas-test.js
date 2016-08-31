@@ -1,8 +1,8 @@
 const expect = require('chai').expect
-const graphlib = require('graphlib')
+const graphlib = require('ciena-graphlib')
 const alg = graphlib.alg
 const Graph = graphlib.Graph
-const findCycles = alg.findcycles
+const findCycles = alg.findCycles
 const _ = require('lodash')
 
 const greedyFAS = require('../lib/greedy-fas')

@@ -1,5 +1,5 @@
 import _ from 'lodash'
-import {Graph} from 'graphlib'
+import {Graph} from 'ciena-graphlib'
 import List from './data/list'
 
 var DEFAULT_WEIGHT_FN = _.constant(1)
@@ -102,7 +102,7 @@ function assignBucket (buckets, zeroIdx, entry) {
  * effective heuristic for the feedback arc set problem." This implementation
  * adjusts that from the paper to allow for weighted edges.
  */
-export default function greedyFAS (g, weightFn) {
+export default function (g, weightFn) {
   if (g.nodeCount() <= 1) {
     return []
   }

@@ -1,5 +1,5 @@
 const expect = require('chai').expect
-const Graph = require('graphlib').Graph
+const Graph = require('ciena-graphlib').Graph
 
 const coordinateSystem = require('../lib/coordinate-system')
 

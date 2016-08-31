@@ -20,44 +20,12 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-import {debugOrdering} from './lib/debug'
+import {debugOrdering} from './debug'
 
 export const debug = {
   debugOrdering
 }
 
-export {default as layout} from './lib/layout'
-
-import {
-  addBorderNode,
-  addDummyNode,
-  asNonCompoundGraph,
-  buildLayerMatrix,
-  intersectRect,
-  maxRank,
-  normalizeRanks,
-  notime,
-  partition,
-  predecessorWeights,
-  removeEmptyRanks,
-  simplify,
-  successorWeights,
-  time
-} from './lib/util'
-
-export const util = {
-  addBorderNode,
-  addDummyNode,
-  asNonCompoundGraph,
-  buildLayerMatrix,
-  intersectRect,
-  maxRank,
-  normalizeRanks,
-  notime,
-  partition,
-  predecessorWeights,
-  removeEmptyRanks,
-  simplify,
-  successorWeights,
-  time
-}
+export {default as graphlib} from 'ciena-graphlib'
+export {default as layout} from './layout'
+export {default as util} from './util'

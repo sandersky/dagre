@@ -1,8 +1,6 @@
 import _ from 'lodash'
 import {asNonCompoundGraph, buildLayerMatrix} from '../util'
-
-import bk from './bk'
-const {positionX} = bk
+import {positionX} from './bk'
 
 function positionY (g) {
   var layering = buildLayerMatrix(g)

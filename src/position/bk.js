@@ -1,5 +1,5 @@
 import _ from 'lodash'
-import {Graph} from 'graphlib'
+import {Graph} from 'ciena-graphlib'
 import {buildLayerMatrix} from '../util'
 
 /*
@@ -377,4 +377,21 @@ export function sep (nodeSep, edgeSep, reverseSep) {
 
 export function width (g, v) {
   return g.node(v).width
+}
+
+export {
+  addConflict,
+  alignCoordinates,
+  balance,
+  buildBlockGraph,
+  findOtherInnerSegmentNode,
+  findSmallestWidthAlignment,
+  findType1Conflicts,
+  findType2Conflicts,
+  hasConflict,
+  horizontalCompaction,
+  positionX,
+  sep,
+  verticalAlignment,
+  width
 }

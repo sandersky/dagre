@@ -12,7 +12,7 @@ function addBorderNode (g, prop, prefix, sg, sgNode, rank) {
   }
 }
 
-export default function addBorderSegments (g) {
+export default function (g) {
   function dfs (v) {
     var children = g.children(v)
     var node = g.node(v)

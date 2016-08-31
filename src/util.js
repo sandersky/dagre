@@ -1,5 +1,5 @@
 import _ from 'lodash'
-import {Graph} from 'graphlib'
+import {Graph} from 'ciena-graphlib'
 
 /*
  * Adds a dummy node to the graph and return v.
@@ -214,4 +214,21 @@ export function time (name, fn) {
 
 export function notime (name, fn) {
   return fn()
+}
+
+export default {
+  addBorderNode,
+  addDummyNode,
+  asNonCompoundGraph,
+  buildLayerMatrix,
+  intersectRect,
+  maxRank,
+  partition,
+  predecessorWeights,
+  normalizeRanks,
+  notime,
+  removeEmptyRanks,
+  simplify,
+  successorWeights,
+  time
 }

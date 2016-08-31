@@ -1,18 +1,16 @@
-/* global chai, dagre */
-
 // These are smoke tests to make sure the bundles look like they are working
 // correctly.
 
-var expect = chai.expect
+var expect = require('chai').expect
+var dagre = require('../lib')
 var graphlib = dagre.graphlib
 
-describe('bundle', function () {
+describe('index', function () {
   it('exports dagre', function () {
     expect(dagre).to.be.an('object')
     expect(dagre.graphlib).to.be.an('object')
     expect(dagre.layout).to.be.a('function')
     expect(dagre.util).to.be.an('object')
-    expect(dagre.version).to.be.a('string')
   })
 
   it('can do trivial layout', function () {

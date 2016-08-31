@@ -39,7 +39,7 @@ import {
 
 import order from './order'
 import position from './position'
-import {Graph} from 'graphlib'
+import {Graph} from 'ciena-graphlib'
 
 function runLayout (g, time) {
   time('    makeSpaceForEdgeLabels', function () { makeSpaceForEdgeLabels(g) })

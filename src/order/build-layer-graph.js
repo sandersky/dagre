@@ -1,5 +1,5 @@
 import _ from 'lodash'
-import {Graph} from 'graphlib'
+import {Graph} from 'ciena-graphlib'
 
 function createRootNode (g) {
   var v

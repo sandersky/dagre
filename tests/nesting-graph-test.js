@@ -1,5 +1,5 @@
 const expect = require('chai').expect
-const graphlib = require('graphlib')
+const graphlib = require('ciena-graphlib')
 const alg = graphlib.alg
 const Graph = graphlib.Graph
 const components = alg.components

@@ -1,5 +1,5 @@
 const expect = require('chai').expect
-const graphlib = require('graphlib')
+const graphlib = require('ciena-graphlib')
 const alg = graphlib.alg
 const Graph = graphlib.Graph
 const findCycles = alg.findCycles
@@ -32,7 +32,7 @@ describe('acyclic', function () {
           g.setPath(['a', 'c', 'd'])
           acyclic.run(g)
           var results = _.map(g.edges(), stripLabel)
-          expect(_.sortByAll(results, ['v', 'w'])).to.eql([
+          expect(_.sortBy(results, ['v', 'w'])).to.eql([
             { v: 'a', w: 'b' },
             { v: 'a', w: 'c' },
             { v: 'b', w: 'd' },

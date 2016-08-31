@@ -1,6 +1,6 @@
 {
-  "name": "dagre",
-  "version": "0.7.5-pre.4",
+  "name": "ciena-dagre",
+  "version": "0.0.0",
   "description": "Graph layout for JavaScript",
   "scripts": {
     "build": "babel src -d lib --presets es2015 --plugins add-module-exports",
@@ -19,7 +19,7 @@
     "layout"
   ],
   "dependencies": {
-    "graphlib": "https://github.com/ciena-blueplanet/graphlib/archive/v2.1.1-beta.1.tar.gz",
+    "ciena-graphlib": "^1.0.0",
     "lodash": "^4.15.0"
   },
   "devDependencies": {
