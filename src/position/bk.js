@@ -274,8 +274,9 @@ export function findSmallestWidthAlignment (g, xss) {
  * coordinate of the smallest width alignment.
  */
 export function alignCoordinates (xss, alignTo) {
-  var alignToMin = _.min(alignTo)
-  var alignToMax = _.max(alignTo)
+  var vals = _.values(alignTo)
+  var alignToMin = _.min(vals)
+  var alignToMax = _.max(vals)
 
   _.forEach(['u', 'd'], function (vert) {
     _.forEach(['l', 'r'], function (horiz) {
@@ -284,7 +285,8 @@ export function alignCoordinates (xss, alignTo) {
       var delta
       if (xs === alignTo) return
 
-      delta = horiz === 'l' ? alignToMin - _.min(xs) : alignToMax - _.max(xs)
+      var xsVals = _.values(xs)
+      delta = horiz === 'l' ? alignToMin - _.min(xsVals) : alignToMax - _.max(xsVals)
 
       if (delta) {
         xss[alignment] = _.mapValues(xs, function (x) { return x + delta })
