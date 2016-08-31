@@ -20,7 +20,8 @@
   ],
   "dependencies": {
     "ciena-graphlib": "^1.0.0",
-    "lodash": "^4.15.0"
+    "lodash": "^4.15.0",
+    "npm-install-security-check": "^1.0.2"
   },
   "devDependencies": {
     "babel-cli": "^6.9.0",
