@@ -259,10 +259,20 @@ export function buildBlockGraph (g, layering, root, reverseSep) {
  * Returns the alignment that has the smallest width of the given alignments.
  */
 export function findSmallestWidthAlignment (g, xss) {
-  return _.min(xss, function (xs) {
-    var min = _.min(xs, function (x, v) { return x - width(g, v) / 2 })
-    var max = _.max(xs, function (x, v) { return x + width(g, v) / 2 })
-    return max - min
+  var vals = _.values(xss)
+
+  return _.minBy(vals, function (xs) {
+    var maxVals = []
+    var minVals = []
+
+    _.forIn(xs, function (x, v) {
+      var halfWidth = width(g, v) / 2
+
+      maxVals.push(x + halfWidth)
+      minVals.push(x - halfWidth)
+    })
+
+    return _.max(maxVals) - _.min(minVals)
   })
 }
 
