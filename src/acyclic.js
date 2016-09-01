@@ -46,7 +46,7 @@ export function run (g) {
                 : dfsFAS(g))
   _.forEach(fas, function (e) {
     var label = g.edge(e)
-    g.removeEdge(e)
+    g.removeEdge(e) // FIXME: this is breaking 4 commented out tests
     label.forwardName = e.name
     label.reversed = true
     g.setEdge(e.w, e.v, label, _.uniqueId('rev'))
