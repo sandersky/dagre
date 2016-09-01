@@ -1,6 +1,6 @@
 {
   "name": "ciena-dagre",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Graph layout for JavaScript",
   "scripts": {
     "build": "babel src -d lib --presets es2015 --plugins add-module-exports",
