@@ -391,8 +391,7 @@ export function width (g, v) {
   return g.node(v).width
 }
 
-export {
-  addConflict,
+export default {
   alignCoordinates,
   balance,
   buildBlockGraph,
