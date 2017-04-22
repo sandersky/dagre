@@ -2,7 +2,7 @@ import _ from 'lodash'
 
 import {
   run as acyclicRun,
-  run as acyclicUndo
+  undo as acyclicUndo
 } from './acyclic'
 
 import {
