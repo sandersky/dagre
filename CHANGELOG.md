@@ -1,3 +1,7 @@
+# 1.0.2 (2017-04-25)
+Fixes graph layout with cycles, re-enable tests
+
+
 # 1.0.1
 
 Fix `export` to be `export default` in `src/position/bk.js`.
