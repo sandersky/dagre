@@ -14,6 +14,7 @@
     "Matthew Dahl (https://github.com/sandersky)"
   ],
   "main": "index.js",
+  "typings": "index.d.ts",
   "keywords": [
     "graph",
     "layout"

@@ -1,2 +1,11 @@
+.bithoundrc
+.github
+.eslintignore
+.eslintrc
+.pullapprove.yml
+.travis.yml
+dependency-snapshot.json
+CHANGELOG.md
 /node_modules
-/test
+/tests
+/src
