@@ -125,8 +125,7 @@ describe('layout', function () {
       .to.be.lt(g.node('b').y)
   })
 
-  // FIXME: get test passing
-  it.skip('can layout out a short cycle', function () {
+  it('can layout out a short cycle', function () {
     g.graph().ranksep = 200
     g.setNode('a', { width: 100, height: 100 })
     g.setNode('b', { width: 100, height: 100 })
@@ -174,8 +173,7 @@ describe('layout', function () {
     ])
   })
 
-  // FIXME: get tests passing
-  describe.skip('can layout a self loop', function () {
+  describe('can layout a self loop', function () {
     _.forEach(['TB', 'BT', 'LR', 'RL'], function (rankdir) {
       it('in rankdir = ' + rankdir, function () {
         g.graph().edgesep = 75
