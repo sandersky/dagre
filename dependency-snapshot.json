@@ -1,6 +1,6 @@
 {
   "name": "ciena-dagre",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "dependencies": {
     "abbrev": {
       "version": "1.0.9",

@@ -1,3 +1,8 @@
+# 1.0.3 (2017-04-25)
+
+Please add a description of your change here, it will be automatically prepended to the `CHANGELOG.md` file.
+
+
 # 1.0.2 (2017-04-25)
 Fixes graph layout with cycles, re-enable tests
 
