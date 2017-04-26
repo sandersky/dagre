@@ -412,10 +412,10 @@ function canonicalize (attrs) {
 
 export default function layout (g, opts) {
   var timeFn = opts && opts.debugTiming ? time : notime
-  time('layout', function () {
-    var layoutGraph = time('  buildLayoutGraph',
+  timeFn('layout', function () {
+    var layoutGraph = timeFn('  buildLayoutGraph',
                                function () { return buildLayoutGraph(g) })
-    time('  runLayout', function () { runLayout(layoutGraph, timeFn) })
-    time('  updateInputGraph', function () { updateInputGraph(g, layoutGraph) })
+    timeFn('  runLayout', function () { runLayout(layoutGraph, timeFn) })
+    timeFn('  updateInputGraph', function () { updateInputGraph(g, layoutGraph) })
   })
 }
