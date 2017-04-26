@@ -1,3 +1,7 @@
+# 1.0.4 (2017-04-26)
+don't use debug timings unless debugTiming == true 
+
+
 # 1.0.3 (2017-04-25)
 
 Please add a description of your change here, it will be automatically prepended to the `CHANGELOG.md` file.
