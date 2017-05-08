@@ -22,7 +22,7 @@ THE SOFTWARE.
 
 import {debugOrdering} from './lib/debug'
 
-export const debug = {
+export var debug = {
   debugOrdering
 }
 
@@ -45,7 +45,7 @@ import {
   time
 } from './lib/util'
 
-export const util = {
+export var util = {
   addBorderNode,
   addDummyNode,
   asNonCompoundGraph,
