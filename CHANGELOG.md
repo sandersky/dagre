@@ -1,3 +1,8 @@
+# 1.0.6 (2017-05-11)
+
+* **Updated** the secure auth tokens in `.travis.yml`
+
+
 # 1.0.5 (2017-05-08)
 
 Please add a description of your change here, it will be automatically prepended to the `CHANGELOG.md` file.
