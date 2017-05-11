@@ -1,3 +1,7 @@
+# 1.0.7 (2017-05-11)
+* **Removed** /src in /.npmignore
+
+
 # 1.0.6 (2017-05-11)
 
 * **Updated** the secure auth tokens in `.travis.yml`
