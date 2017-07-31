@@ -20,13 +20,13 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-import {debugOrdering} from './lib/debug'
+import {debugOrdering} from './src/debug'
 
 export var debug = {
   debugOrdering
 }
 
-export {default as layout} from './lib/layout'
+export {default as layout} from './src/layout'
 
 import {
   addBorderNode,
@@ -43,7 +43,7 @@ import {
   simplify,
   successorWeights,
   time
-} from './lib/util'
+} from './src/util'
 
 export var util = {
   addBorderNode,
