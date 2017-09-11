@@ -2,7 +2,7 @@
 
 `ciena-dagre` is a fork of [dagre](https://github.com/cpettitt/dagre),
 which is a JavaScript library that makes it easy to lay out directed graphs on
-the client-side.
+the client-side.  The history behind this fork's existence can be read at https://github.com/ciena-blueplanet/dagre/issues/24
 
 ###### Dependencies
 
